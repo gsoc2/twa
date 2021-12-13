@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<title>TWA man page</title>
+<meta name="generator" content="roffit">
+<STYLE type="text/css">
+P.level0 {
+ padding-left: 2em;
+}
+
+P.level1 {
+ padding-left: 4em;
+}
+
+P.level2 {
+ padding-left: 6em;
+}
+
+span.emphasis {
+ font-style: italic;
+}
+
+span.bold {
+ font-weight: bold;
+}
+
+span.manpage {
+ font-weight: bold;
+}
+
+h2.nroffsh {
+ background-color: #e0e0e0;
+}
+
+span.nroffip {
+ font-weight: bold;
+ font-size: 120%;
+ font-family: monospace;
+}
+
+p.roffit {
+ text-align: center;
+ font-size: 80%;
+}
+</STYLE>
+</head><body>
+
+<p class="level0">
+<p class="level0"><a name="NAME"></a><h2 class="nroffsh">NAME</h2>
+<p class="level0">twa - tiny web auditor with strong opinions 
+<p class="level0"><a name="SYNOPSIS"></a><h2 class="nroffsh">SYNOPSIS</h2>
+<p class="level0"><span Class="bold">twa</span> <span Class="emphasis">[-wvcsdV]</span> <span Class="emphasis">DOMAIN</span> 
+<p class="level0"><a name="DESCRIPTION"></a><h2 class="nroffsh">DESCRIPTION</h2>
+<p class="level0"><span Class="bold">twa</span> takes a <span Class="emphasis">DOMAIN</span> hosting a website and performs a short security audit. It can be used to detect HTTP(S) issues, missing security headers, information-leaking headers, and other potential security hazards. 
+<p class="level0"><span Class="bold">twa</span> takes only one <span Class="emphasis">DOMAIN</span> at a time. If you need to audit multiple sites, run the program again. 
+<p class="level0"><a name="OPTIONS"></a><h2 class="nroffsh">OPTIONS</h2>
+<p class="level0">
+<p class="level0"><span Class="bold">-v</span> Verbose mode. 
+<p class="level0"><span Class="bold">-w</span> Perform the audit on the main <span Class="emphasis">DOMAIN</span> and the <span Class="emphasis">www.</span> subdomain. 
+<p class="level0"><span Class="bold">-c</span> Emit output in CSV. 
+<p class="level0"><span Class="bold">-s</span> Run testssl-based checks (skipped by default) 
+<p class="level0"><span Class="bold">-d</span> Disable scanning common development ports 
+<p class="level0"><span Class="bold">-V</span> Print the version and exit. 
+<p class="level0"><span Class="bold">-h</span> Print a help message and exit. 
+<p class="level0"><a name="ENVIRONMENT"></a><h2 class="nroffsh">ENVIRONMENT</h2>
+<p class="level0">
+<p class="level0"><span Class="bold">NO_COLOR</span> Don't colorize output, even when on a TTY. 
+<p class="level0"><span Class="bold">TWA_TIMEOUT</span> The maximum length, in seconds, for internal <span Class="bold">curl</span> calls. 
+<p class="level0"><span Class="bold">TWA_USER_AGENT</span> The User-Agent to use for all <span Class="bold">curl</span> calls. 
+<p class="level0"><span Class="bold">TWA_CURLOPTS</span> Any additional options to pass to <span Class="bold">curl</span> calls. 
+<p class="level0"><a name="TEST"></a><h2 class="nroffsh">TEST RESULTS</h2>
+<p class="level0">Each line of output describes the result of a single test, and follows the "<span Class="bold">RESULT</span>(<span Class="emphasis">DOMAIN</span>): explanation" format, where <span Class="bold">RESULT</span> is one of the following: 
+<p class="level0"><span Class="bold">PASS</span> The test passed with flying colors. 
+<p class="level0"><span Class="bold">MEH</span> The test passed, but with one or more things that could be improved. 
+<p class="level0"><span Class="bold">FAIL</span> The test failed, and should be fixed. 
+<p class="level0"><span Class="bold">UNK</span> The server gave us something we didn't understand. 
+<p class="level0"><span Class="bold">SKIP</span> The server gave us something we understood, but that we don't handle yet. 
+<p class="level0"><span Class="bold">FATAL</span> A really important test failed, and should be fixed immediately. 
+<p class="level0"><a name="BUGS"></a><h2 class="nroffsh">BUGS</h2>
+<p class="level0">None known. File issues at: <span Class="emphasis">https://github.com/trailofbits/twa</span> 
+<p class="level0"><a name="AUTHOR"></a><h2 class="nroffsh">AUTHOR</h2>
+<p class="level0"><span Class="bold">twa</span> is maintained by William Woodruff (&lt;william @ trailofbits.com&gt;). <p class="roffit">
+ This HTML page was made with <a href="http://daniel.haxx.se/projects/roffit/">roffit</a>.
+</body></html>
