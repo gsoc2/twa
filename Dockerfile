@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM alpine:3.18.6
 
 LABEL name twa
 LABEL src "https://github.com/trailofbits/twa"
